@@ -1,0 +1,27 @@
+% 识别杆塔类型
+clc;clear
+DataPath = '.\Data\电塔序号1\';
+% 读取杆塔号
+TowerIds = getTowerID(DataPath);
+TowerNum = size(TowerIds,1);
+% 判断杆塔类型并识别耐张塔
+k = 1;
+for i = 1:TowerNum
+    TowerID = TowerIds(i,:);
+    copyfile(['.\Data\电塔序号\',TowerID,'杆塔.txt'],['.\Data\电塔序号1\',TowerID,'杆塔.txt'])
+    copyfile(['.\Data\电塔序号\',TowerID,'电力线.txt'],['.\Data\电塔序号1\',TowerID,'电力线.txt'])
+%     copyfile(['.\Data\电塔序号\',TowerID,'杆塔.txt'],['.\Data\New Folder\',sprintf('%03d', k),'杆塔.txt'])
+%     copyfile(['.\Data\电塔序号\',TowerID,'电力线.txt'],['.\Data\New Folder\',sprintf('%03d', k),'电力线.txt'])
+%     k = k+1;
+%     % 读取电力线和杆塔点云
+%     TowerPts = importdata([DataPath,TowerID,'杆塔.txt']);
+%     TowerPtsMove = [TowerPts(:,1) - min(TowerPts(:,1)),...
+%         TowerPts(:,2) - min(TowerPts(:,2)),...
+%         TowerPts(:,3) - min(TowerPts(:,3))];
+%     writematrix(TowerPtsMove,[DataPath,TowerID,'杆塔.txt']);
+%     LinePts = importdata([DataPath,TowerID,'电力线.txt']);
+%     LinePtsMove = [LinePts(:,1) - min(TowerPts(:,1)),...
+%         LinePts(:,2) - min(TowerPts(:,2)),...
+%         LinePts(:,3) - min(TowerPts(:,3))];
+%     writematrix(LinePtsMove,[DataPath,TowerID,'电力线.txt']);
+end
