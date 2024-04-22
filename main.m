@@ -2,6 +2,7 @@
 clc;clear
 DataPath = '.\Data\电塔序号1\';
 addpath(genpath('.\Functions'))
+% 通过TypeIdf脚本获取
 Types = importdata('TowerTypes.txt');
 % 读取杆塔号
 TowerIds = getTowerID(DataPath);
