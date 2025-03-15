@@ -1,9 +1,9 @@
 # Insulator Extraction from UAV LiDAR Point Cloud Based on Multi-Type and Multi-Scale Feature Histogram
 
 This repository contains the official implementation for the paper:  
-**"Insulator Extraction from UAV LiDAR Point Cloud Based on Multi-Type and Multi-Scale Feature Histogram"**​  
-*Drones 2024, 8(6), 241*  
-[DOI: 10.3390/drones8060241](https://doi.org/10.3390/drones8060241)
+**"Chen, M.; Li, J.; Pan, J.; Ji, C.; Ma, W. Insulator Extraction from UAV LiDAR Point Cloud Based on Multi-Type and Multi-Scale Feature Histogram. Drones 2024, 8, 241."**​  
+ 
+(https://doi.org/10.3390/drones8060241)
 
 ## 📝 Overview
 A novel method for automated insulator extraction from UAV LiDAR point clouds using:
